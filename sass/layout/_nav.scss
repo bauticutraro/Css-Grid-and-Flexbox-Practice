@@ -1,0 +1,148 @@
+.header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: $header-height;
+    transition: all .3s ease-out;
+    background: $header-bg-op-1;
+
+    &-content {
+        margin: auto;
+        max-width: $header-container-width;
+        display: grid;
+        grid-template: {
+            columns: repeat(3, 1fr);
+            rows: $header-height;
+            areas: $header-area;
+        }
+    }    
+}
+
+.logo {
+    z-index: 1100;
+    grid-area: logo;
+    justify-self: $logo-position;
+    align-self: center;
+
+    &-link {
+        text-indent: -9999px;
+        display: block;
+        width: $logo-width;
+        height: $logo-height;
+        background: {
+            image: url($logo-url);
+            size: $logo-bg-size;
+            repeat: no-repeat;
+            position: center;
+        }
+        
+    }
+}
+
+.panel {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    overflow-y: auto;
+    grid-area: panel;
+    background-color: $header-bg-op-1;
+    transition: transform .3s ease-out;
+    z-index: 1000;
+    @include panel-direction(left);
+
+    &-btn {
+        z-index: 999;
+        grid-area: bars;
+        justify-self: center;
+        align-self: center;
+    }
+
+    &:target {
+        transform: translateX(0);
+    }
+}
+
+.cross {
+    font-size: 20px;;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.menu {
+    margin-top: calc(#{$header-height} + 2rem);
+
+    &__list {
+        padding-left: 0;
+    }
+
+    &__item {
+        display: flex; 
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__link {
+        padding: 1rem;
+        font: {
+            weight: bold;
+            size: 1.5rem;
+        }
+        color: $bars-color;
+        transition: all .3s ease-out;
+
+        &:hover {
+            color: $header-color;
+            background: $bars-color;
+        }
+    }
+}
+
+.after-fixed { padding-top: $header-height;}
+
+.fa-bars {
+    font-size: 30px;
+    color: $bars-color;
+}
+
+@media screen and (min-width: 64rem) {
+    .header {
+        &-content {
+            grid-template: {
+                columns: auto 1fr;
+                rows: $header-height;
+                areas: 'logo panel'
+            }
+        }
+    }
+
+    .logo { justify-self: start }
+
+    .panel {
+        position: static;
+        overflow-y: visible;
+        transform: translate(0, 0);
+        background-color: transparent;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        &-btn { display: none}
+    }
+
+    .cross  { display: none }
+
+    .menu {
+        margin-top: 0;
+    
+        &__item { display: inline-block; }
+    
+        &__link {
+            &:hover {
+                border-top: medium solid $header-color;
+                background: transparent;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@mixin panel-direction($dir) {
+    @if $dir == left {
+        transform: translateX(-100%);
+    } @else if $dir == right {
+        transform: translateX(100%);
+    } @else if $dir == top {
+        transform: translateY(-100%);
+    } @else if $dir == bottom {
+        transform: translateY(100%);
+    }
+}
