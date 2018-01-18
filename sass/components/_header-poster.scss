@@ -1,0 +1,27 @@
+.poster {
+    background-image: url('../images/home-lady-runner.jpg');
+    width: 100%;
+    min-height: 100vh;
+    background: {
+        position: center;
+        size: cover;
+        attachment: fixed; 
+    }
+
+    &--opacity {
+        min-height: inherit;
+        width: inherit;
+        background-color: rgba(23,18,38,0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 5vw;
+        text-align: center;
+        padding: 0 3vh;
+    }
+}
+

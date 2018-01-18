@@ -1,0 +1,31 @@
+.youtube {
+    iframe {
+        display: none;
+
+        @media screen and (min-width: 64em) {
+                display: block;
+                height: 750px;
+                width: 100%;
+        }
+    }
+
+    .play {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        margin: 3rem auto;
+
+        &:hover {
+            color: #0096d9;
+        }
+
+        @media screen and (min-width: 64em) {
+            display: none;
+    }
+    }
+
+    .fa-play {
+        margin-right: 1em;
+    }
+}
+

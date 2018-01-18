@@ -1,0 +1,19 @@
+.sentence {
+    font-family: 'Permanent Marker', sans-serif;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    font-size: 3vw;
+    line-height: 1.4;
+
+    @media screen and (max-width: 624px) {
+        font-size: 20px;
+    }
+
+    cite {
+        font-size: 2vw;
+        @media screen and (max-width: 624px) {
+            font-size: 15px;
+        }
+    }
+}

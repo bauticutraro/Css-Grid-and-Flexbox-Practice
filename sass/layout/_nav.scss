@@ -4,7 +4,7 @@
     width: 100%;
     height: $header-height;
     transition: all .3s ease-out;
-    background: $header-bg-op-1;
+    background: $header-bg-op-0;
 
     &-content {
         margin: auto;
@@ -145,4 +145,8 @@
             }
         }
     }
+}
+
+.js-header-bg {
+    background: $header-bg-op-1;
 }
