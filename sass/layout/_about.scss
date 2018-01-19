@@ -1,0 +1,9 @@
+.about {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, fit-content);
+    grid-gap: 2rem;
+    justify-items: center;
+}
+
+

@@ -2,6 +2,7 @@
     background-image: url('../images/home-lady-runner.jpg');
     width: 100%;
     min-height: 100vh;
+    max-height: 100vh;
     background: {
         position: center;
         size: cover;
@@ -19,9 +20,20 @@
 
     &__title {
         color: #fff;
-        font-size: 5vw;
         text-align: center;
+        font-size: 5vw;
         padding: 0 3vh;
     }
 }
 
+.poster--about {
+    background-image: url('../images/acerca-runners-steps.jpg');
+
+    .poster__title {
+        letter-spacing: 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+}
