@@ -37,3 +37,48 @@
         
     }
 }
+
+.poster--marathons {
+    background-image: url('../images/maratones-abbott-medal.jpg');
+    line-height: 1.4;
+
+    .poster__title {
+        letter-spacing: 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    &-1 {
+        background-image: url('../images/maratones-tokyo-panorama.jpg');        
+    }
+
+    &-2 {
+        background-image: url('../images/maratones-boston-panorama.jpg');        
+    }
+
+    &-3 {
+        background-image: url('../images/maratones-london-panorama.jpg');        
+    }
+
+    &-4 {
+        background-image: url('../images/maratones-berlin-panorama.jpg');        
+    }
+
+    &-5 {
+        background-image: url('../images/maratones-chicago-panorama.jpg');        
+    }
+
+    &-6 {
+        background-image: url('../images/maratones-new-york-panorama.jpg');        
+    }
+}
+
+.ls-0 {
+    letter-spacing: 0;
+}
+
+.font-z {
+    font-size: 4vw;
+}

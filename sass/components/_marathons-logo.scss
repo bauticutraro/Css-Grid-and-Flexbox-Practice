@@ -1,0 +1,32 @@
+.marathons {
+
+    &__logo {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, auto);
+        background-color: #fff;
+    
+        b {
+            font-style: italic;
+        }
+    }
+
+    &__text {
+        grid-column: 1 / span 6;
+        grid-row: 1 / span 1;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            cursor: pointer;
+        }
+
+    }
+}
+
