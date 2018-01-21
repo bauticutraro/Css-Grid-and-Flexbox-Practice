@@ -94,3 +94,15 @@
         
     }
 }
+
+.poster--fast {
+    background-image: url('../images/el-mas-veloz-header.jpg');
+
+    .poster__title {
+        letter-spacing: 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+}
