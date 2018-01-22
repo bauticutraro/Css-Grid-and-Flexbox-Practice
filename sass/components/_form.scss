@@ -57,10 +57,7 @@
             border: medium solid #0096D9;
           }
 
-        @media screen and (min-width: 64rem) {
-            width: 70%;
-        }
-       
+        @media screen and (min-width: 64rem) { width: 70%; }
     }
 
     & > *::-webkit-input-placeholder {
@@ -72,8 +69,5 @@
         }
     }
 
-    textarea {
-        height: 300px;
-    }
-
+    textarea { height: 300px; }
 }

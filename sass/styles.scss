@@ -12,7 +12,6 @@
 @import "base/base";
 
 // Layout
-@import "layout/nav";
 @import "layout/home";
 @import "layout/about";
 @import "layout/marathons";
@@ -21,6 +20,7 @@
 @import "layout/contact";
 
 // components
+@import "components/nav";
 @import "components/header-poster";
 @import "components/sentence";
 @import "components/youtube";
@@ -33,4 +33,3 @@
 @import "components/form";
 @import "components/map";
 @import "components/social";
-

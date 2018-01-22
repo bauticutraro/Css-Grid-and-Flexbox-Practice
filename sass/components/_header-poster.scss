@@ -1,5 +1,4 @@
 .poster {
-    background-image: url('../images/home-lady-runner.jpg');
     width: 100%;
     min-height: 100vh;
     max-height: 100vh;
@@ -8,7 +7,7 @@
         size: cover;
         attachment: fixed; 
     }
-
+    
     &--opacity {
         min-height: inherit;
         width: inherit;
@@ -17,92 +16,40 @@
         justify-content: center;
         align-items: center;
     }
-
+    
     &__title {
         color: #fff;
         text-align: center;
         font-size: 5vw;
         padding: 0 3vh;
-    }
-}
-
-.poster--about {
-    background-image: url('../images/acerca-runners-steps.jpg');
-
-    .poster__title {
         letter-spacing: 2vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
     }
+}
+
+.poster--home { background-image: url('../images/home-lady-runner.jpg'); }
+
+.poster--about { background-image: url('../images/acerca-runners-steps.jpg'); }
+
+.poster--marathons { background-image: url('../images/maratones-abbott-medal.jpg'); }
+
+.poster--womans { background-image: url('../images/mujeres-header.jpg'); }
+
+.poster--fast { background-image: url('../images/el-mas-veloz-header.jpg'); }
+
+.poster--error { background-image: url('../images/error-404.jpg'); }
+
+.poster--home {
+     .poster__title { display: block; }
 }
 
 .poster--marathons {
-    background-image: url('../images/maratones-abbott-medal.jpg');
-    line-height: 1.4;
-
-    .poster__title {
-        letter-spacing: 2vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
-    }
-
-    &-1 {
-        background-image: url('../images/maratones-tokyo-panorama.jpg');        
-    }
-
-    &-2 {
-        background-image: url('../images/maratones-boston-panorama.jpg');        
-    }
-
-    &-3 {
-        background-image: url('../images/maratones-london-panorama.jpg');        
-    }
-
-    &-4 {
-        background-image: url('../images/maratones-berlin-panorama.jpg');        
-    }
-
-    &-5 {
-        background-image: url('../images/maratones-chicago-panorama.jpg');        
-    }
-
-    &-6 {
-        background-image: url('../images/maratones-new-york-panorama.jpg');        
-    }
-}
-
-.ls-0 {
-    letter-spacing: 0;
-}
-
-.font-z {
-    font-size: 4vw;
-}
-
-.poster--womans {
-    background-image: url('../images/mujeres-header.jpg');
-
-    .poster__title {
-        letter-spacing: 2vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
-    }
-}
-
-.poster--fast {
-    background-image: url('../images/el-mas-veloz-header.jpg');
-
-    .poster__title {
-        letter-spacing: 2vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
-    }
+    &-1 { background-image: url('../images/maratones-tokyo-panorama.jpg'); }
+    &-2 { background-image: url('../images/maratones-boston-panorama.jpg'); }
+    &-3 { background-image: url('../images/maratones-london-panorama.jpg'); }
+    &-4 { background-image: url('../images/maratones-berlin-panorama.jpg'); }
+    &-5 { background-image: url('../images/maratones-chicago-panorama.jpg'); }
+    &-6 { background-image: url('../images/maratones-new-york-panorama.jpg'); }
 }

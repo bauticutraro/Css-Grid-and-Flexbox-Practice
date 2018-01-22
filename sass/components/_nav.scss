@@ -58,9 +58,7 @@
         align-self: center;
     }
 
-    &:target {
-        transform: translateX(0);
-    }
+    &:target { transform: translateX(0); }
 }
 
 .cross {
@@ -73,9 +71,7 @@
 .menu {
     margin-top: calc(#{$header-height} + 2rem);
 
-    &__list {
-        padding-left: 0;
-    }
+    &__list { padding-left: 0; }
 
     &__item {
         display: flex; 
@@ -139,6 +135,8 @@
         &__item { display: inline-block; }
     
         &__link {
+            border-top: medium solid transparent;
+
             &:hover {
                 border-top: medium solid $header-color;
                 background-color: transparent;

@@ -9,4 +9,3 @@ function startVideo (mq) {
 
 mq.addListener(startVideo)
 startVideo(mq)
-  

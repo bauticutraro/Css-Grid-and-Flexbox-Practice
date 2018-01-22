@@ -6,14 +6,10 @@
     font-size: 3vw;
     line-height: 1.4;
 
-    @media screen and (max-width: 624px) {
-        font-size: 20px;
-    }
+    @media screen and (max-width: 624px) { font-size: 20px; }
 
     cite {
         font-size: 2vw;
-        @media screen and (max-width: 624px) {
-            font-size: 15px;
-        }
+        @media screen and (max-width: 624px) { font-size: 15px; }
     }
 }

@@ -30,66 +30,7 @@
               cursor: pointer;
               transition: 1s;
 
-              &:hover {
-                  transform: scale(1.5);
-              }
+              &:hover { transform: scale(1.5); }
           }
       }
-}
-
-
-  
-  .c1xr1 {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  
-  .c1xr2 {
-    grid-column: span 1;
-    grid-row: span 2;
-  }
-  
-  .c1xr3 {
-    grid-column: span 1;
-    grid-row: span 3;
-  }
-  
-  .c2xr1 {
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-  
-  .c2xr2 {
-    grid-column: span 2;
-    grid-row: span 2;
-  }
-  
-  .c2xr3 {
-    grid-column: span 2;
-    grid-row: span 3;
-  }
-  
-  .c3xr1 {
-    grid-column: span 3;
-    grid-row: span 1;
-  }
-  
-  .c3xr1 {
-    grid-column: span 3;
-    grid-row: span 1;
-  }
-  
-  .c3xr2 {
-    grid-column: span 3;
-    grid-row: span 2;
-  }
-  
-  .c3xr3 {
-    grid-column: span 3;
-    grid-row: span 3;
-  }
-  
-
-.center {
-    text-align: center;
 }

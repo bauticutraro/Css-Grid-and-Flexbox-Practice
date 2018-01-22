@@ -3,9 +3,9 @@
         display: none;
 
         @media screen and (min-width: 64em) {
-                display: block;
-                height: 750px;
-                width: 100%;
+            display: block;
+            height: 750px;
+            width: 100%;
         }
     }
 
@@ -15,17 +15,10 @@
         justify-content: center;
         margin: 3rem auto;
 
-        &:hover {
-            color: #0096d9;
-        }
+        &:hover { color: #0096d9; }
 
-        @media screen and (min-width: 64em) {
-            display: none;
-    }
+        @media screen and (min-width: 64em) { display: none; }
     }
 
-    .fa-play {
-        margin-right: 1em;
-    }
+    .fa-play { margin-right: 1em; }
 }
-

@@ -6,9 +6,7 @@
         grid-template-rows: repeat(2, auto);
         background-color: #fff;
     
-        b {
-            font-style: italic;
-        }
+        b { font-style: italic; }
     }
 
     &__text {
@@ -34,4 +32,3 @@
         }
     }
 }
-

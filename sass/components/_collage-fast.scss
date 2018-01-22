@@ -14,25 +14,19 @@
         margin-bottom: 1rem;
     }
 
-    &__title { 
-        order: 1;
+    &__title { order: 1; }
+    &__text1 { order: 2; }
+    &__text2 { order: 4; }
+    &__text3 { order: 6; }
+    &__video { order: 3; }
+    &__img1 { order: 0; }
+    &__img2 { order: 5; }
 
+    &__title { 
         br { display: none; }
     }
 
-    &__text1 { order: 2; }
-
-    &__text2 { order: 4; }
-
-    &__text3 { order: 6; }
-
-    &__img1 { order: 0; }
-
-    &__img2 { order: 5; }
-
     &__video {
-        order: 3;
-
         iframe { display: none; }
 
         .play {
