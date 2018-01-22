@@ -1,0 +1,22 @@
+.contact__social {
+
+
+    &-list {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2rem 0;
+    }
+
+    &-item {
+        
+    }
+
+    &-link {
+        font-size: 10vw;
+        
+        @media screen and (min-width: 64rem) {
+            font-size: 5vw;
+        }
+    }
+}

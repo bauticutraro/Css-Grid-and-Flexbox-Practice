@@ -1,0 +1,27 @@
+.contact {
+  width: 100%;
+  min-height: 100vh;
+  background: {
+    image: url('../images/contacto-hola.jpg');
+    position: center bottom;
+    repeat: no-repeat;
+    size: cover;
+  }
+  display: grid;
+  grid-template: {
+    columns: 100%;
+    rows: repeat(3, auto);
+    areas: 'video'
+            'info'
+            'map';
+  }
+
+  @media screen and (min-width: 64em) {
+    grid-template: {
+      columns: repeat(3, 1fr);
+      rows: 100vh 1fr;
+      areas: 'video video video'
+             'map info info';
+    }
+  }
+}
